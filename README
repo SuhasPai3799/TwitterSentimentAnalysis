@@ -1,0 +1,5 @@
+Spark_Stream.py is the python file that consists of the mllib algorithm, and the streaming of tweets. 
+Tweets.py generates tweets into the brokers.
+Website folder contains the website html, and also the text files which are the output of frequent item mining.
+CloudVideo.mkv is a proof of the whole assignment working.
+All other screenshots have been labelled appropriately.

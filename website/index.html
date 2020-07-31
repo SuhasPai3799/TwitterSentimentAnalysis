@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cloud Computing Assignment -5 </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+body, html {
+  height: 100%;
+  background-image: url("bg2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: fjalla one;
+}
+
+* {
+  box-sizing: border-box;
+}
+.nav{
+  color:black!important;
+}
+.bg-image {
+  /* The image used */
+  background-image: url("bg1.png");
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: white!important;
+}
+</style>
+</head>
+<body>
+
+
+<div style="text-align:center;" >
+<p>Click on the buttons inside the tabbed menu:</p>
+<h2> Live Tweets </h2>
+<iframe src="live_tweets.txt" height = "200" width ="400" style="border:none;"></iframe>
+
+<div style = "position:relative;top:60px">
+<ul class="nav nav-pills nav-justified" >
+  <li class="active"><a data-toggle="tab" href="#home" style="color:black!important">New York</a></li>
+  <li><a data-toggle="tab" href="#menu1"style="color:black!important">California</a></li>
+</ul>
+
+<div class="tab-content">
+  <div id="home" class="tab-pane fade in active" style="text-align:center;">
+    <h3>New York Tweet Count</h3>
+    <iframe src="NY.txt" height ="100" width="200" style="border:none;"></iframe>
+    <h3>New York Frequent Item Sets</h3>
+    <iframe src="freq_NY.txt" height ="200" width="400" style="border:none;"></iframe>
+ 
+  </div>
+  <div id="menu1" class="tab-pane fade" style="text-align:center;">
+    <h3>California Tweet Count</h3>
+    <iframe src="CA.txt" height ="100" width="200" style="border:none;"></iframe>
+    <h3>California Frequent Item Sets</h3>
+    <iframe src="freq_CA.txt" height ="200" width="400" style="border:none;"></iframe>
+  </div>
+</div>
+</div>
+</div>
+
+   
+</body>
+<script type="text/javascript">
+	
+	  $(document).ready(function() {
+        // auto refresh page after 1 second
+        setInterval('refreshPage()', 15000);
+    });
+
+    function refreshPage() { 
+        location.reload(); 
+    }
+</script>
+</html> 

@@ -1,0 +1,9 @@
+[u'that'], 18
+[u'this'], 14
+[u'with'], 11
+[u'your', u'that'], 4
+[u'Exit', u'(WETHERELL'], 3
+[u'Exit', u'Cleared:'], 3
+[u'Exit', u'(WETHERELL', u'Cleared:'], 3
+[u'Jersey', u'#GeorgeWashingtonBridge', u'Level'], 2
+[u'Jersey', u'#GeorgeWashingtonBridge', u'Level', u'York'], 2

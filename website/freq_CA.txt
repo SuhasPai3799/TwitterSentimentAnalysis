@@ -1,0 +1,9 @@
+[u'that'], 50
+[u'this'], 49
+[u''], 47
+[u'like', u'that'], 11
+[u'like', u'this'], 6
+[u'with', u'this'], 6
+[u'@notsasuke_', u'@patriciameza_', u'@lizzete__gonz'], 4
+[u'[Santa', u'PDT,', u'Barbara'], 3
+[u'[Santa', u'PDT,', u'Barbara', u'reports'], 3
